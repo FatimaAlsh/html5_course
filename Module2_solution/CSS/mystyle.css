@@ -5,24 +5,44 @@
 }
 /***************** Base style **************************************/
 
-div{
-  position:relative;
+/****** the heading ************/
+h1{
+  text-align: center;
+  margin:50px;
+}
+
+/*The container that contains 1- title  2- the text below the title*/
+section#container{
   background-color: grey;
   height: 200px;
   border: 1px solid black;
+  height: 150px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+  
 }
-
-section {
-  clear:right;
-
-}
-h1{
+/* the sections titles of each n*/
+.par{
+  position:relative;
+  top:0;
+  right:0;
+  margin:0;
+  width: 100px;
+  height: 40px;
+  float:right;
+  padding:5px;
+  border:1px solid black;
   text-align: center;
 }
 
-/**background for section titles****/
+
+/**unique background for each section title****/
 #p1{
   background-color:lightcoral;
+  color:black;
 }
 #p2{
 background-color: darkslategrey;
@@ -31,17 +51,15 @@ background-color: darkslategrey;
 background-color: darkseagreen;
 }
 
-p {
-  position:relative;
-  top:0;
-  right:0;
-  width: 80px;
-  height: 40px;
-  float:right;
-  border:1px solid black;
- text-align: center;
+/* the sections text  */
+#text{
+  clear:right;
+  padding:5px;
 }
 
+
+
+/***********************Responsive Design *****************************/
 /******************** Desktop Version *******************************/
 .row{
     width:100%
@@ -62,7 +80,6 @@ p {
     .col-md-12{
         width:100%;
         float:left;
-
 }
 }
 /******************** Mobile Version *******************************/
@@ -70,6 +87,5 @@ p {
     .col-sm-12{
         width:100%;
         float:left;
-     
     }
 }
